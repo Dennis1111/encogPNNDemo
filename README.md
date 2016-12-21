@@ -4,7 +4,7 @@ a temporar version of Encog PNN for bugfixes and some related demos
 The demos Iris and Abalone depends on
 Encog 3.3, EJML0.30, JFreeChart  
 
-EJML is used for principal components
+EJML is used for principal components and viewing the dataset
 download EJML 0.30 from http://www.ejml.org and include paths to
 main/dense64/src;
 main/core/src;
