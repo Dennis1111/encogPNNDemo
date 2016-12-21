@@ -18,6 +18,8 @@ The democlasses to run is
 examples/pnn/Iris.java and
 examples/pnn/Abalone.java
 
+Should perhaps have normalized inputs but unless theres is huge diff in variance for inputs I think it's ok.
+
 Major Changes to the encog classes
 BasicPNN
 1. If using separate classes is gonna work the number of sigmas should be inputcount*outputcount
