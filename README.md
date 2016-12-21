@@ -15,7 +15,7 @@ also download abalone.data from https://archive.ics.uci.edu/ml/datasets/Abalone
 iris.csv can be found in the encog core distribution
 
 The democlasses to run is 
-examples/pnn/Iris.java
+examples/pnn/Iris.java and
 examples/pnn/Abalone.java
 
 Major Changes to the encog classes
