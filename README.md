@@ -12,6 +12,7 @@ examples/src;
 download JFreeChart from http://www.jfree.org/jfreechart/
 and include their paths (jfreechart and jcommon)
 also download abalone.data from https://archive.ics.uci.edu/ml/datasets/Abalone
+iris.csv can be found in the encog core distribution
 
 Major Changes to the encog classes
 BasicPNN
