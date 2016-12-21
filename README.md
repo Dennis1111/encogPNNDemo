@@ -1,5 +1,7 @@
 # encogPNNDemo
-a temporar version of Encog PNN for bugfixes and some related demos
+A version of Encog PNN for bugfixes and some related demos
+Have temporarily removed org.encog from encog package names to keep things separate when working
+on local version.
 
 The demos Iris and Abalone depends on
 Encog 3.3, EJML0.30, JFreeChart  
@@ -43,7 +45,3 @@ Splitted the derivate calculation in into two functions dependent on separate cl
 
 GlobalMinimum
 Not hardcoded to have sigmas as parameter
-
-
-
-
