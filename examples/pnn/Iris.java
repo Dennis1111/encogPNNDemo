@@ -72,8 +72,7 @@ public class Iris extends JFrame {
 		this.setVisible(true);
 	}
 
-	private double[] getRoundedSigmas() {
-		double[] sigma = pnn.getSigma();
+	private double[] getRoundedSigmas(double[] sigma) {
 		double[] rounded = new double[sigma.length];
 		for (int i = 0; i < sigma.length; i++)
 			rounded[i] = Math.rint(sigma[i] * 1000) / 1000;
@@ -108,7 +107,7 @@ public class Iris extends JFrame {
 		ConfusionMatrix trainCM = pnn.computeConfusionMatrix(trainDataSet);
 		this.confusionPanel.add(trainCM, constraint);
 		trainCM.updateGrid();
-		message += "Trained "+typeOfSearch+ "\n"+Arrays.toString(getRoundedSigmas()) + "\n";
+		message += "Trained "+typeOfSearch+ "\n"+Arrays.toString(getRoundedSigmas(pnn.getSigma())) + "\n";
 		textArea.setText(message);
 		this.pack();
 	}
@@ -131,7 +130,7 @@ public class Iris extends JFrame {
 			constraint.gridy++;
 			constraint.gridx = 0;
 			confusionPanel.add(trainCM, constraint);
-			message+="Genetic Algoritm Sigmas\n" + Arrays.toString(getRoundedSigmas()) + "\n";
+			message+="Genetic Algoritm Sigmas\n" + Arrays.toString(getRoundedSigmas(bestPop.getSigma())) + "\n";
 			textArea.setText(message);				
 			this.pack();
 		} catch (Exception e) {
