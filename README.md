@@ -14,6 +14,10 @@ and include their paths (jfreechart and jcommon)
 also download abalone.data from https://archive.ics.uci.edu/ml/datasets/Abalone
 iris.csv can be found in the encog core distribution
 
+The democlasses to run is 
+examples/pnn/Iris.java
+examples/pnn/Abalone.java
+
 Major Changes to the encog classes
 BasicPNN
 1. If using separate classes is gonna work the number of sigmas should be inputcount*outputcount
