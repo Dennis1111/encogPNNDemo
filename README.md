@@ -19,6 +19,7 @@ iris.csv can be found in the encog core distribution
 The democlasses to run is 
 examples/pnn/Iris.java and
 examples/pnn/Abalone.java
+The demos is hardcoded to save Population created by GeneticAlgoritmBasicPNN in "C:/MLDataSet/Iris/GA" and "C:/MLDataSet/Abalone/GA"
 
 Should perhaps have normalized inputs but unless theres is huge difference in variance for inputs I think it's ok.
 
