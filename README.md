@@ -25,7 +25,7 @@ Should perhaps have normalized inputs but unless theres is huge difference in va
 Major Changes to the encog classes
 BasicPNN
 1. If using separate classes is gonna work the number of sigmas should be inputcount*outputcount
-2. Instead of using the selectCounter I use isSamePattern(pattern1,pattern2), the purpose was to make it easier to implement threaded use of compute(MLData)
+2. Instead of using the excludeCounter I use isSamePattern(pattern1,pattern2), the purpose was to make it easier to implement threaded use of compute(MLData)
 3. Have created a method public ConfusionMatrix computeConfusionMatrix(MLDataSet dataset) , thinks it's always nice to see the confusionMatrix for classification examples and I then use this method for training the pnn with Genetic Algoritm
 4. Though i haven't test using priors i don't see how it is possible so i added 	public void setPriors(double[] priors)t
 5. Experimented some with subsets and haven't cleaned it totatally up.
